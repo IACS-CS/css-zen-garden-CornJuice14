@@ -22,7 +22,8 @@
 .page-wrapper {
   /* Main font */
   font-family: Poppins, sans-serif;
-  color:white
+  color:rgb(255, 0, 0);
+  font-size: small;
 }
 h1,
 h2,
@@ -37,6 +38,10 @@ h6 {
 /* Background */
 #css-zen-garden {
   background: url(PurpleBrain.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
 }
 /* Page wrapper */
 .page-wrapper {
@@ -46,4 +51,29 @@ h6 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 960px;
   margin: 0 auto;
+}
+
+h2 {
+  padding-left: 35%;
+  /* zeroing out vertical space -- it gets positioned
+  with negative margin on .summary */
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.summary {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 9%;
+  padding-bottom: 8%;
+  padding-left: 16%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Negative margin so the heading above is in the bubble*/
+  margin-top: -35px;
 }
