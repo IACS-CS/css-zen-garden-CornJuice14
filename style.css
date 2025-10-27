@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 /********************************** 
 * Design by:  CJ Myerov
 * Design name:  [your design name]
@@ -21,7 +22,7 @@
 
 .page-wrapper {
   /* Main font */
-  font-family: Poppins, sans-serif;
+  font-family: "Story Script";
   color:rgb(255, 0, 0);
   font-size: small;
 }
