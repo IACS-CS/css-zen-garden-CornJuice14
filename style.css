@@ -54,7 +54,7 @@ h6 {
   margin: 0 auto;
 }
 
-h2 {
+h2,h3,h4 {
   padding-left: 35%;
   /* zeroing out vertical space -- it gets positioned
   with negative margin on .summary */
@@ -77,4 +77,129 @@ h2 {
   background-position: center;
   /* Negative margin so the heading above is in the bubble*/
   margin-top: -35px;
+}
+
+.preamble {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 17%;
+  padding-right: 9%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Negative margin so the heading above is in the bubble*/
+  margin-top: -45px;
+}
+
+.preamble h3{
+  position: absolute;
+    top: 496px;
+    left: calc(50% - 135px);
+    padding: 0;
+    width: 181px;
+    text-align: center;
+}
+
+.explanation {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Negative margin so the heading above is in the bubble*/
+  margin-top: -45px;
+}
+
+.explanation h3 {
+  position: absolute;
+    top: 900px;
+    left: calc(50% - 135px);
+    padding: 0;
+    width: 181px;
+    text-align: center;
+}
+
+.participation {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  font-size: x-large;
+}
+
+.participation h3 {
+  position: absolute;
+    top: 1305px;
+    left: calc(50% - 160px);
+    padding: 0;
+    width: 245px;
+    text-align: center;
+}
+
+.requirements {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 20%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Negative margin so the heading above is in the bubble*/
+  margin-top: -45px;
+}
+
+.requirements h3 {
+  position: absolute;
+    top: 1705px;
+    left: calc(50% - 135px);
+    padding: 0;
+    width: 181px;
+    text-align: center;
+}
+
+.select {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Negative margin so the heading above is in the bubble*/
+  margin-top: -45px;
+}
+
+.select h3 {
+  position: absolute;
+    top: 900px;
+    left: calc(50% - 135px);
+    padding: 0;
+    width: 181px;
+    text-align: center;
 }
