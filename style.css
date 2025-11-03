@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 /********************************** 
 * Design by:  CJ Myerov
-* Design name:  [your design name]
+* Design name:  [Think About It]
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
 * don't want others to use the design]
 * 
 * Acknowledgments/Sources:
-* - 
-* - 
-* -
+* - https://freesvg.org/thought-bubble
+* -https://picryl.com/media/brain-human-anatomy-anatomy-health-medical-b79c9f
 */
 
 /* Starter code -- feel free to delete */
@@ -53,6 +52,7 @@ h6 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 960px;
   margin: 0 auto;
+  position:relative;
 }
 
 h2,h3,h4 {
@@ -68,48 +68,40 @@ h2,h3,h4 {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 9%;
-  padding-bottom: 8%;
-  padding-left: 16%;
-  padding-right: 8%;
+  padding-top: 6%;
+  padding-left: 17%;
+  padding-right: 12%;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* Negative margin so the heading above is in the bubble*/
-  margin-top: -35px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
+}
+.summary::before {
+  content: "The Beauty Of CSS Design";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+
+.summary:hover {
+  scale: 1;
+}
+.page-wrapper h2 {
+    display:none;
 }
 
 .preamble {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  padding-left: 17%;
-  padding-right: 9%;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: -45px;
-}
-
-.preamble h3{
-  position: absolute;
-    top: 496px;
-    left: calc(50% - 135px);
-    padding: 0;
-    width: 200px;
-    text-align: center;
-}
-
-.explanation {
-  background: url(thought_bubble.svg);
-  width: 800px;
-  height: 450px;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 5%;
   padding-left: 17%;
   padding-right: 11%;
   box-sizing: border-box;
@@ -117,23 +109,65 @@ h2,h3,h4 {
   background-size: cover;
   background-position: center;
   margin-top: -45px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
+}
+.preamble::before {
+  content: "The Road to Enlightenment";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.preamble:hover {
+  scale: 1;
+}
+.preamble h3{
+  display: none;
 }
 
-.explanation h3 {
+.explanation {
+  background: url(thought_bubble.svg);
+  width: 800px;
+  height: 450px;
+  padding-top: 5%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
   position: absolute;
-    top: 900px;
-    left: calc(50% - 135px);
-    padding: 0;
-    width: 181px;
-    text-align: center;
+  top: 30px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
+}
+.explanation::before {
+  content: "So What Is This About?";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.explanation:hover {
+  scale: 1;
+}
+.explanation h3{
+  display: none;
 }
 
 .participation {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 5%;
   padding-left: 17%;
   padding-right: 11%;
   box-sizing: border-box;
@@ -142,23 +176,32 @@ h2,h3,h4 {
   background-position: center;
   margin-top: -45px;
   font-size: x-large;
-}
-
-.participation h3 {
   position: absolute;
-    top: 1305px;
-    left: calc(50% - 160px);
-    padding: 0;
-    width: 275px;
-    text-align: center;
+  top: 45px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
+}
+.participation::before {
+  content: "Rules of the Garden";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.participation:hover {
+  scale: 1;
+}
+.participation h3{
+  display: none;
 }
 
 .requirements {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 5%;
   padding-left: 20%;
   padding-right: 11%;
   box-sizing: border-box;
@@ -166,24 +209,33 @@ h2,h3,h4 {
   background-size: cover;
   background-position: center;
   margin-top: -45px;
+position: absolute;
+  top: 60px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
 }
-
-.requirements h3 {
-  position: absolute;
-    top: 1705px;
-    left: calc(50% - 135px);
-    padding: 0;
-    width: 181px;
-    text-align: center;
+.requirements::before {
+  content: "Requirements";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.requirements:hover {
+  scale: 1;
+}
+.requirements h3{
+  display: none;
 }
 
 .design-selection {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 6.5%;
-  padding-bottom: 8%;
-  padding-left: 17%;
+  padding-top: 4%;
+  padding-left: 20%;
   padding-right: 11%;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -191,23 +243,32 @@ h2,h3,h4 {
   background-position: center;
   margin-top: -45px;
   font-size: x-large;
+position: absolute;
+  top: 75px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
 }
-
-.design-selection h3 {
-  position: absolute;
-    top: 2115px;
-    left: calc(50% - 135px);
-    padding: 0;
-    width: 220px;
-    text-align: center;
+.design-selection::before {
+  content: "Select A Design";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.design-selection:hover {
+  scale: 1;
+}
+.design-selection h3{
+  display: none;
 }
 
 .design-archives {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 6.5%;
-  padding-bottom: 8%;
+  padding-top: 4%;
   padding-left: 17%;
   padding-right: 11%;
   box-sizing: border-box;
@@ -216,23 +277,32 @@ h2,h3,h4 {
   background-position: center;
   margin-top: -45px;
   font-size: xx-large;
+position: absolute;
+  top: 90px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
 }
-
-.design-archives h3 {
-  position: absolute;
-    top: 2515px;
-    left: calc(50% - 135px);
-    padding: 0;
-    width: 190px;
-    text-align: center;
+.design-archives::before {
+  content: "Archives";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.design-archives:hover {
+  scale: 1;
+}
+.design-archives h3{
+  display: none;
 }
 
 .zen-resources {
   background: url(thought_bubble.svg);
   width: 800px;
   height: 450px;
-  padding-top: 6.5%;
-  padding-bottom: 8%;
+  padding-top: 4%;
   padding-left: 17%;
   padding-right: 11%;
   box-sizing: border-box;
@@ -241,13 +311,23 @@ h2,h3,h4 {
   background-position: center;
   margin-top: -45px;
   font-size: large;
+position: absolute;
+  top: 110px;
+  left: 20px;
+  scale: 0.05;
+  transition: scale 300ms;
 }
-
-.zen-resources h3 {
-  position: absolute;
-    top: 2925px;
-    left: calc(50% - 135px);
-    padding: 0;
-    width: 190px;
-    text-align: center;
+.zen-resources::before {
+  content: "Resources";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.zen-resources:hover {
+  scale: 1;
+}
+.zen-resources h3{
+  display: none;
 }
