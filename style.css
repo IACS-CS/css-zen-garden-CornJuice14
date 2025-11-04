@@ -23,7 +23,7 @@
 .page-wrapper {
   /* Main font */
   font-family: "Story Script";
-  color:rgb(255, 0, 0);
+  color:rgb(255, 130, 130);
   font-size: small;
 }
 h1,
@@ -38,21 +38,23 @@ h6 {
 
 /* Background */
 #css-zen-garden {
-  background: url(PurpleBrain.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-color: black;
+  
+  background-color: rgb(0, 0, 0);
 }
 /* Page wrapper */
 .page-wrapper {
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid #fff25d;
   padding: 1em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 960px;
   margin: 0 auto;
   position:relative;
+  height: 800px;
+  background: url(PurpleBrain.png);
+background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 h2,h3,h4 {
@@ -76,8 +78,8 @@ h2,h3,h4 {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: -25px;
+  left: -20px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -110,8 +112,8 @@ display: block;
   background-position: center;
   margin-top: -45px;
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 20px;
+  left: 150px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -143,8 +145,8 @@ display: block;
   background-position: center;
   margin-top: -45px;
   position: absolute;
-  top: 30px;
-  left: 20px;
+  top: 75px;
+  left: -200px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -177,8 +179,8 @@ display: block;
   margin-top: -45px;
   font-size: x-large;
   position: absolute;
-  top: 45px;
-  left: 20px;
+  top: 75px;
+  left: 250px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -210,8 +212,8 @@ display: block;
   background-position: center;
   margin-top: -45px;
 position: absolute;
-  top: 60px;
-  left: 20px;
+  top: 275px;
+  left: -225px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -244,8 +246,8 @@ display: block;
   margin-top: -45px;
   font-size: x-large;
 position: absolute;
-  top: 75px;
-  left: 20px;
+  top: 275px;
+  left: 290px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -278,8 +280,8 @@ display: block;
   margin-top: -45px;
   font-size: xx-large;
 position: absolute;
-  top: 90px;
-  left: 20px;
+  top: 425px;
+  left: -20px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -312,8 +314,8 @@ display: block;
   margin-top: -45px;
   font-size: large;
 position: absolute;
-  top: 110px;
-  left: 20px;
+  top: 425px;
+  left: 150px;
   scale: 0.05;
   transition: scale 300ms;
 }
@@ -331,3 +333,4 @@ display: block;
 .zen-resources h3{
   display: none;
 }
+
