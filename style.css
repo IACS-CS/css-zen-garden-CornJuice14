@@ -8,8 +8,9 @@
 * don't want others to use the design]
 * 
 * Acknowledgments/Sources:
-* - https://freesvg.org/thought-bubble
-* -https://picryl.com/media/brain-human-anatomy-anatomy-health-medical-b79c9f
+* - Thought Bubble png: https://freesvg.org/thought-bubble
+* - Purple Brain: https://picryl.com/media/brain-human-anatomy-anatomy-health-medical-b79c9f
+* - Colorful Brain: https://medium.com/@velidran/from-chaos-to-clarity-24e2a01f29fa
 */
 
 /* Starter code -- feel free to delete */
@@ -36,6 +37,7 @@ h6 {
   font-family: "Kablammo", system-ui;
 }
 
+
 /* Background */
 #css-zen-garden {
   
@@ -51,7 +53,7 @@ h6 {
   margin: 0 auto;
   position:relative;
   height: 800px;
-  background: url(PurpleBrain.png);
+  background: url(ColorfulBrain.png);
 background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -334,3 +336,34 @@ display: block;
   display: none;
 }
 
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Apply pulse effect on hover */
+.summary:hover,
+.preamble:hover,
+.explanation:hover,
+.participation:hover,
+.requirements:hover,
+.design-selection:hover,
+.design-archives:hover,
+.zen-resources:hover {
+  animation: pulse 1s infinite;
+  z-index: 10; /* bring hovered bubble to front */
+}
+
+/* Animate background gradient on page */
+#css-zen-garden {
+  background: linear-gradient(270deg, #ff8a8a, #a38aff, #8affc1);
+  background-size: 600% 600%;
+  animation: gradientShift 60s ease infinite;
+}
+
+/* Keyframes for smooth gradient shift */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
