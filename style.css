@@ -11,6 +11,7 @@
 * - Thought Bubble png: https://freesvg.org/thought-bubble
 * - Purple Brain: https://picryl.com/media/brain-human-anatomy-anatomy-health-medical-b79c9f
 * - Colorful Brain: https://medium.com/@velidran/from-chaos-to-clarity-24e2a01f29fa
+* - I had ChatGPT help me make lines 340-364 and 380-385 for pulse effect and background animation
 */
 
 /* Starter code -- feel free to delete */
@@ -80,9 +81,12 @@ h2,h3,h4 {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: -25px;
-  left: -20px;
-  scale: 0.05;
+  /* start at top center */
+  top: 40vh;
+  left: calc(32vw - 400px);
+  /* zoom from top */
+  transform-origin: top; 
+  scale: 0.15;
   transition: scale 300ms;
 }
 .summary::before {
@@ -95,7 +99,7 @@ display: block;
 }
 
 .summary:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .page-wrapper h2 {
     display:none;
@@ -114,9 +118,11 @@ display: block;
   background-position: center;
   margin-top: -45px;
   position: absolute;
-  top: 20px;
-  left: 150px;
-  scale: 0.05;
+  /* position bottom left */
+  bottom: 30vh;
+  left: 20vw;
+  transform-origin: bottom left;
+  scale: 0.15;
   transition: scale 300ms;
 }
 .preamble::before {
@@ -128,7 +134,7 @@ text-align: center;
 display: block;
 }
 .preamble:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .preamble h3{
   display: none;
@@ -147,9 +153,9 @@ display: block;
   background-position: center;
   margin-top: -45px;
   position: absolute;
-  top: 75px;
-  left: -200px;
-  scale: 0.05;
+   top: 40vh;
+  left: calc(50vw - 400px);
+  scale: 0.15;
   transition: scale 300ms;
 }
 .explanation::before {
@@ -161,7 +167,7 @@ text-align: center;
 display: block;
 }
 .explanation:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .explanation h3{
   display: none;
@@ -181,9 +187,9 @@ display: block;
   margin-top: -45px;
   font-size: x-large;
   position: absolute;
-  top: 75px;
-  left: 250px;
-  scale: 0.05;
+   top: 5vh;
+  left: calc(43vw - 400px);
+  scale: 0.15;
   transition: scale 300ms;
 }
 .participation::before {
@@ -195,7 +201,7 @@ text-align: center;
 display: block;
 }
 .participation:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .participation h3{
   display: none;
@@ -214,9 +220,10 @@ display: block;
   background-position: center;
   margin-top: -45px;
 position: absolute;
-  top: 275px;
-  left: -225px;
-  scale: 0.05;
+   top: 5vh;
+  left: calc(40vw - 400px);
+  transform-origin: bottom left;
+  scale: 0.15;
   transition: scale 300ms;
 }
 .requirements::before {
@@ -228,7 +235,7 @@ text-align: center;
 display: block;
 }
 .requirements:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .requirements h3{
   display: none;
@@ -248,9 +255,9 @@ display: block;
   margin-top: -45px;
   font-size: x-large;
 position: absolute;
-  top: 275px;
-  left: 290px;
-  scale: 0.05;
+   top: 10vh;
+  left: calc(15vw - 400px);
+  scale: 0.15;
   transition: scale 300ms;
 }
 .design-selection::before {
@@ -262,7 +269,7 @@ text-align: center;
 display: block;
 }
 .design-selection:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .design-selection h3{
   display: none;
@@ -282,9 +289,9 @@ display: block;
   margin-top: -45px;
   font-size: xx-large;
 position: absolute;
-  top: 425px;
-  left: -20px;
-  scale: 0.05;
+  top: -3vh;
+  left: calc(30vw - 400px);
+  scale: 0.15;
   transition: scale 300ms;
 }
 .design-archives::before {
@@ -296,7 +303,7 @@ text-align: center;
 display: block;
 }
 .design-archives:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .design-archives h3{
   display: none;
@@ -316,9 +323,9 @@ display: block;
   margin-top: -45px;
   font-size: large;
 position: absolute;
-  top: 425px;
-  left: 150px;
-  scale: 0.05;
+   top: 58vh;
+  left: calc(37vw - 400px);
+  scale: 0.15;
   transition: scale 300ms;
 }
 .zen-resources::before {
@@ -330,7 +337,7 @@ text-align: center;
 display: block;
 }
 .zen-resources:hover {
-  scale: 1;
+  scale: 0.75;
 }
 .zen-resources h3{
   display: none;
@@ -350,7 +357,8 @@ display: block;
 .design-selection:hover,
 .design-archives:hover,
 .zen-resources:hover {
-  animation: pulse 1s infinite;
+  animation: pulse 1s;
+  animation-iteration-count: 2;
   z-index: 10; /* bring hovered bubble to front */
 }
 
@@ -361,9 +369,32 @@ display: block;
   animation: gradientShift 60s ease infinite;
 }
 
+/* Add title text styling */
+h1 {
+    background: linear-gradient(270deg, #0995f3, #f3a405, #e10e82);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color: transparent;
+    background-size: 600% 600%;
+    animation: gradientShift 60s ease infinite;
+    font-size: 3em;
+    padding-top: none;
+}
+
 /* Keyframes for smooth gradient shift */
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+li{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(12, 104, 22);
 }
